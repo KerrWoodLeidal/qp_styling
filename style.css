@@ -1,0 +1,374 @@
+h1 {
+	color: #212529;
+}
+
+.navbar-light .navbar-toggler {
+	color: #fffed6;
+	background-color: #e0cb07;
+}
+
+h2 {
+	color: #212529;
+}
+h3 {
+	color:#212529;
+}
+body {
+	background-color: #ffffff;
+	/*background-color: #effced;*/
+}
+
+
+.row .main-top {
+	padding-bottom: 500px
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Allows scrolling if the content exceeds the height */
+}
+.sidebar-sticky a{
+	color:#fffed6;
+	height: 100%;
+	/*font-weight: bold;*/
+
+}
+
+/* .col-md-2{
+	background-color:black;
+} */
+.navbar-light .navbar-nav .nav-link{
+	color: #fffed6;
+	font-size: 1.4em;
+
+}
+.nav > li > a:hover{
+    background-color:#686868;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: white;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: white;
+}
+
+.navbar-light{
+	background-color: #212529;
+}
+
+/*https://colorpalettes.net/color-palette-4198/*/
+
+.navbar-light .navbar-brand {
+    color:#e0cb07;
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+}
+
+.bg-light {
+	background-color: black;
+}
+
+.bg-light .sidebar {
+	background-color: black;
+}
+
+.main-page {
+    width: 175px;
+}
+
+.main-med2 {
+	color: white;
+}
+
+.main-h1{
+	font-size: 3em;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color:black;
+	padding-left: 100px;
+
+}
+
+.top-top{
+	padding-top: 50px;
+	/*background-color: #2a4158;*/
+}
+
+/*.col-md-4{
+    background-color: #176caf;
+}*/
+
+.main-col2{
+    background-color: white;
+}
+
+
+.main-h2{
+    font-size: 1.5em;
+	padding-top: 150px;
+	padding-bottom: 10px;
+	
+}
+
+.btn-primary{
+	background-color: #212529;
+	font-weight: bold;
+	color:#fffed6;
+	border-color: #212529;
+}
+
+.btn-success{
+	background-color: #212529;
+	font-weight: bold;
+	color:#fffed6;
+	border-color: #212529;
+
+}
+/*.main-bot{
+	background-color: #958a56;
+	padding-top: 500px;
+
+}*/
+
+.jumbotron {
+	/*background-image: url(../img/home3.jpg);*/
+	background-size: cover;
+	background-position: center;
+	background-color: white;
+
+}
+
+.jumbotron .display-4{
+	color: #212529;
+	font-size: 2.5em;
+}
+
+.jumbotron .display-2{
+	color: white;
+	font-size: 1.5em;
+}
+.jumbotron .lead{
+	color: #212529;
+}
+
+.jumbotron .lead2{
+	color: white;
+}
+
+.rowAcross{
+	background-color: #e0cb07;
+	color: white;
+}
+
+
+.jumbotron .col-md-12{
+	padding-left: 650px;
+	padding-top: 80px;
+}
+
+.list-unstyled{
+	color: white;
+	font-size: 1.5em;
+	text-decoration:none
+}
+
+a{
+	color:#212529;
+	text-decoration:none
+}
+
+.dashboard{
+	background: white;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: 0;
+	/*bottom: 0;*/
+/*	padding: 10px;
+	height: 50px;*/
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	
+}
+
+.footer {
+	background: white;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.col-md-4 .login{
+	padding-top: 800px;
+}
+
+.logout .{
+	color: black
+}
+
+.row .idfFig{
+	padding-bottom: 50px;
+}
+
+.row .gridFig{
+	padding-bottom: 50px;
+}
+
+.container .logIn{
+	padding: 50
+}
+
+.card-img-top {
+    width: 50%;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.top{
+	padding-top: 50px;
+	color: red;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 90px;					
+    height: 35px;					
+    padding: 2px;				
+    font: 12px sans-serif;	
+    color: white;	
+    background: #636363;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.overflow-auto {
+	height:800px;
+	width: 100%;
+	overflow-y: scroll;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.row .dash{
+	background-color:#f8f9fa;
+	padding-top: 10px;
+}
+
+.row .info{
+	background-color:red;
+	padding-top: 10px;
+}
+
+.row .main-med {
+	background-color:green;
+	padding-top: 10px;
+
+}
+
+.main-med{
+	background-color: #212529;
+	padding-top: 10px;
+	padding-bottom: 300px;
+}
+
+.main-med a{
+	color: #fffed6;
+	font-size: 1.5em;
+}
+
+.vl {
+  border-left: 4px solid #e0cb07;
+  height: 50px;
+}
+.nav-tabs {
+	border-bottom: 1px solid #e0cb07;
+}
+.nav-tabs .nav-link.active {
+	background-color: white;
+}
+
+.row .dash-small{
+	background-color:#f8f9fa;
+	padding-top: 10px;
+}
+
+.card .h-md-100{
+	background-color: red;
+	border: 0 solid #edf2f9;
+	border-radius: .375rem;
+}
+
+.overflow-auto-table {
+	height:480px;
+	overflow-y: scroll;
+}
+
+
+.card-header {
+	/*background: #2a4158;*/
+	background: #212529;
+	/*color: white;*/
+	color:#fffed6;
+}
+
+.card-img-top{
+	border-radius: 20%;
+}
+
+ /* Style the buttons */
+/*.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}*/
+
+
+/*.active, .btn:hover {
+  background-color: #666;
+  color: white;
+} */
+
+/*.btn-primary.active {
+  color: white;
+  background-color: red;
+  border-color: #5cb85c;
+  outline: none;
+}*/
+
+.page-link{
+	color: #fffed6;
+	background-color: #212529;
+}
+
+.page-item.active .page-link {
+	background-color: #fffed6;
+	color: #212529;
+	border-color: #fffed6;
+}
+
+/*.page-item:hover {
+	background-color: red;
+}*/
+
+.pagination > .page-item > a:hover
+{
+    background-color: #fffed6 !Important;
+    border: solid 1px #fffed6;
+    color:  #212529;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    
+    background-color: red;
+    border-color: red; /*set the color you want here*/
+}
+
+/* .form-check-label {
+	text-align: left;
+} */

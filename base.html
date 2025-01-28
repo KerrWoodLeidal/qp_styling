@@ -1,0 +1,293 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <title>
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <style>
+        /* .card {
+          border: 1px solid #ccc;
+          padding: 20px;
+          margin: 10px;
+        } */
+      .card {
+        flex: 1 1 500px; /* Adjust the basis and grow/shrink ratio */
+        max-width: 500px; /* Maximum width of each card */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+        /* .card-header {
+          color: #e0cb07 !important;
+        } */
+      
+      .card-header {
+        color: #e0cb07 !important;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      
+        input[type="text"] {
+          width: 98%;
+          padding: 10px;
+          margin: 10px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          font-size: 16px;
+        }
+      
+        /* #cardContainer {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+          gap: 20px;
+        } */
+      
+      #cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Adjust the space between cards */
+        justify-content: left; /* Center the cards horizontally */
+      }
+      
+      /* .card-body {
+        padding: 20px;
+      }
+      
+      .card-text {
+        margin: 0;
+      } */
+      
+        #launch {
+          background-color: #212529;
+          color: #fffed6;
+          border: 1px solid #212529;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          width: 100px;
+          bottom: 10px;
+        }
+      
+        #launch:hover {
+          background-color: #fffed6;
+          /* New background color on hover */
+          color: #212529;
+          border-color: #212529;
+        }
+      </style>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom border-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">qp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/apps">Apps</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="main" id="content" name="content">
+        <div class="col-12 justify-content-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+                        <div class="sidebar-sticky">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                </li>
+                                <li class="nav-item">
+                                    <a style="color:#e0cb07">
+                                        <span data-feather="header"></span>
+                                        Currently Available Apps
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/kwikFind">
+                                        <span data-feather="users"></span>
+                                        kwikFind
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/forms">
+                                        <span data-feather="users"></span>
+                                        Forms
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </nav>
+                    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                        <form method="post" enctype="multipart/form-data">
+                            
+                            <div class="container" style="text-align: left;">
+                                <!-- <div class="row mb-3" style="text-align: left;"> -->
+                                    <!-- <div class="col-md-12" > -->
+                                        <label for="clientContact" class="form-label" style="text-align: left;">Client Contact:</label>
+                                        <select class="form-select" id="clientContact" name="clientContact" required>
+                                            <option value="" disabled selected>--- Select from the list below ---</option>
+                                            
+                                                <option value="{{key}}">value</option>
+                                            
+                                        </select>
+                                        <div id="btnContainer" style="margin-top: 10px;">
+                                            <!-- <button class="btn" id="btnHzd1" name="addClient" onclick="showAddClientModal(event)" style="display: block; background-color: #e0cb07; color: black;">New Contact</button> -->
+                                            <button class="btn" id="btnHzd1" name="addClient" onclick="showAddClientModal(event)" style="display: block; background-color: #146262; color: white;">New Contact</button>
+                                        </div>		
+                                
+                                <label for="prjName" class="form-label" style="text-align: left; padding-top: 10px;">Name of Project:</label>
+                                <input type="text" name="prjName" id="prjName" placeholder="Enter a name for your project..." required>
+                    
+                                <label for="estFees" class="form-label" style="text-align: left;">Estimated Fees:</label>
+                                <input type="text" name="estFees" id="estFees" placeholder="Enter dollar value..." oninput="formatNumber(this)" required>
+                    
+                            </div>
+                            <div class="container" style="padding-top: 10px;">
+                                <div class="row mb-3" style="text-align: left;">
+                                    
+                                    <div class="col-md-4" >
+                                        <label for="billingManager" class="form-label" style="text-align: left;">Billing Manager:</label>
+                                        <select class="form-select" id="billingManager" name="billingManager" required>
+                                                
+                                                    <option value="{{bm}}">value</option>
+                                                
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <label for="prjManager" class="form-label" style="text-align: left;">Project Manager:</label>
+                                        <select class="form-select" id="prjManager" name="prjManager" required>
+                                                    <option value="{{pm}}">value</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-md-4" >
+                                        <label for="wrkBroughtInBy" class="form-label" style="text-align: left;">Work Brought In By:</label>
+                                        <select class="form-select" id="wrkBroughtInBy" name="wrkBroughtInBy" required>
+                                                    <option value="{{staff}}">value</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4" >
+                                        <label for="competitive" class="form-label" style="text-align: left;">Competitive:</label>
+                                        <select class="form-select" id="competitive" name="competitive" required>
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="container" style="padding-top: 10px;">
+                                <div class="row mb-3" style="text-align: left;">
+                                    <div class="col-md-4" >
+                                        <label for="startDate" class="form-label" style="text-align: left;">Expected Start Date:</label>
+                                        <input type="date" name="startDate" id="date" placeholder="..." required>
+                                    </div>
+                                    <div class="col-md-4" >
+                                        <label for="endDate" class="form-label" style="text-align: left;">Expected End Date:</label>
+                                        <input type="date" name="endDate" id="date" placeholder="..." required>
+                                    </div>
+                                    <div class="col-md-4" >
+                                        <label for="probAward" class="form-label" >Probability of Award: <output id="value"></output>%</label>
+                                        <input type="range" name="probAward" id="probAward" min="0" max ="100" step="5" value="50" required>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="container" style="padding-top: 10px;">
+                                <div class="row mb-3" style="text-align: left; display: flex; align-items: center;">
+                                    <div class="col-md-8" >
+                                        <div id="gif-text"></div>
+                                    </div>
+                                    <div class="col-md-4" >
+                                        <div id="gif-container"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="container" id="btnContainer" style="margin-top: 40px;">
+                                <div>
+                                    <button class="btn" id="btnHzd1Back" name="btnBack" value="backPg1" type="submit">Previous</button>
+                                </div>
+                                <div>
+                                    <button class="btn" id="btnHzd1" name="reviewingOppData" type="submit">value</button>
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
+                        <hr>
+                        <div id="cardContainer">
+                            <div class="card">
+                              <div class="card-header">
+                                Hazard Assessment Screening Form
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Last Updated: January 2024</p>
+                                <a href="{% url 'formHazard:main' %}" id="launch" class="btn">Launch</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header">
+                                New Opportunity
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Last Updated: August 2024</p>
+                                <a href="{% url 'formNewProject:newOpp' %}" id="launch" class="btn">Launch</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header">
+                                New Proposal
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Last Updated: August 2024</p>
+                                <a href="{% url 'formNewProject:newProposal' %}" id="launch" class="btn">Launch</a>
+                              </div>
+                            </div>
+                        </div>
+                        <footer class="container footer dashboard">
+                            <p>QuayPort © <span id="copyrightYear"></span></p>
+                        </footer>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Update copyright year dynamically
+        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
