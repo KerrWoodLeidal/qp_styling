@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 
@@ -15,39 +14,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <style>
-        /* .card {
-          border: 1px solid #ccc;
-          padding: 20px;
-          margin: 10px;
-        } */
-
-      
-        /* #cardContainer {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-          gap: 20px;
-        } */
-      
-      #cardContainer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px; /* Adjust the space between cards */
-        justify-content: left; /* Center the cards horizontally */
-      }
-      
-      /* .card-body {
-        padding: 20px;
-      }
-      
-      .card-text {
-        margin: 0;
-      } */
-      
-
-      </style>
+        #cardContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* Adjust the space between cards */
+            justify-content: left;
+            /* Center the cards horizontally */
+        }
+    </style>
     <nav class="navbar navbar-expand-lg navbar-light border-bottom border-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src = "KWL_Square_Logo.JPG"></a>
+            <a class="navbar-brand" href="/"><img src="KWL_Square_Logo.JPG"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,7 +36,7 @@
                         <a class="nav-link" href="/apps">Apps</a>
                     </li>
                 </ul>
-                
+
             </div>
         </div>
     </nav>
@@ -92,62 +70,69 @@
                                         Forms
                                     </a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </nav>
                     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                         <form method="post" enctype="multipart/form-data">
-                            
+
                             <div class="container" style="text-align: left;">
-                                <!-- <div class="row mb-3" style="text-align: left;"> -->
-                                    <!-- <div class="col-md-12" > -->
-                                        <label for="clientContact" class="form-label" style="text-align: left;">Client Contact:</label>
-                                        <select class="form-select" id="clientContact" name="clientContact" required>
-                                            <option value="" disabled selected>--- Select from the list below ---</option>
-                                            
-                                                <option value="{{key}}">value</option>
-                                            
-                                        </select>
-                                        <div id="btnContainer" style="margin-top: 10px;">
-                                            <!-- <button class="btn" id="btnHzd1" name="addClient" onclick="showAddClientModal(event)" style="display: block; background-color: #e0cb07; color: black;">New Contact</button> -->
-                                            <button class="btn" id="newContact" name="addClient" onclick="showAddClientModal(event)" style="display: block;">New Contact</button>
-                                        </div>		
-                                
-                                <label for="prjName" class="form-label" style="text-align: left; padding-top: 10px;">Name of Project:</label>
-                                <input type="text" name="prjName" id="prjName" placeholder="Enter a name for your project..." required>
-                    
-                                <label for="estFees" class="form-label" style="text-align: left;">Estimated Fees:</label>
-                                <input type="text" name="estFees" id="estFees" placeholder="Enter dollar value..." oninput="formatNumber(this)" required>
-                    
+                                <label for="clientContact" class="form-label" style="text-align: left;">Client
+                                    Contact:</label>
+                                <select class="form-select" id="clientContact" name="clientContact" required>
+                                    <option value="" disabled selected>--- Select from the list below ---</option>
+
+                                    <option value="{{key}}">value</option>
+
+                                </select>
+                                <div id="btnContainer" style="margin-top: 10px;">
+                                    <button class="btn" id="newContact" name="addClient"
+                                        onclick="showAddClientModal(event)" style="display: block;">New Contact</button>
+                                </div>
+
+                                <label for="prjName" class="form-label"
+                                    style="text-align: left; padding-top: 10px;">Name of Project:</label>
+                                <input type="text" name="prjName" id="prjName"
+                                    placeholder="Enter a name for your project..." required>
+
+                                <label for="estFees" class="form-label" style="text-align: left;">Estimated
+                                    Fees:</label>
+                                <input type="text" name="estFees" id="estFees" placeholder="Enter dollar value..."
+                                    oninput="formatNumber(this)" required>
+
                             </div>
                             <div class="container" style="padding-top: 10px;">
                                 <div class="row mb-3" style="text-align: left;">
-                                    
-                                    <div class="col-md-4" >
-                                        <label for="billingManager" class="form-label" style="text-align: left;">Billing Manager:</label>
-                                        <select class="form-select" id="billingManager" name="billingManager" required>
-                                                
-                                                    <option value="{{bm}}">value</option>
-                                                
-                                        </select>
-                                    </div>
-                                    
+
                                     <div class="col-md-4">
-                                        <label for="prjManager" class="form-label" style="text-align: left;">Project Manager:</label>
+                                        <label for="billingManager" class="form-label" style="text-align: left;">Billing
+                                            Manager:</label>
+                                        <select class="form-select" id="billingManager" name="billingManager" required>
+
+                                            <option value="{{bm}}">value</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="prjManager" class="form-label" style="text-align: left;">Project
+                                            Manager:</label>
                                         <select class="form-select" id="prjManager" name="prjManager" required>
-                                                    <option value="{{pm}}">value</option>
+                                            <option value="{{pm}}">value</option>
                                         </select>
                                     </div>
-                                    
-                                    <div class="col-md-4" >
-                                        <label for="wrkBroughtInBy" class="form-label" style="text-align: left;">Work Brought In By:</label>
+
+                                    <div class="col-md-4">
+                                        <label for="wrkBroughtInBy" class="form-label" style="text-align: left;">Work
+                                            Brought In By:</label>
                                         <select class="form-select" id="wrkBroughtInBy" name="wrkBroughtInBy" required>
-                                                    <option value="{{staff}}">value</option>
+                                            <option value="{{staff}}">value</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-4" >
-                                        <label for="competitive" class="form-label" style="text-align: left;">Competitive:</label>
+                                    <div class="col-md-4">
+                                        <label for="competitive" class="form-label"
+                                            style="text-align: left;">Competitive:</label>
                                         <select class="form-select" id="competitive" name="competitive" required>
                                             <option value="No">No</option>
                                             <option value="Yes">Yes</option>
@@ -155,74 +140,80 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="container" style="padding-top: 10px;">
                                 <div class="row mb-3" style="text-align: left;">
-                                    <div class="col-md-4" >
-                                        <label for="startDate" class="form-label" style="text-align: left;">Expected Start Date:</label>
+                                    <div class="col-md-4">
+                                        <label for="startDate" class="form-label" style="text-align: left;">Expected
+                                            Start Date:</label>
                                         <input type="date" name="startDate" id="date" placeholder="..." required>
                                     </div>
-                                    <div class="col-md-4" >
-                                        <label for="endDate" class="form-label" style="text-align: left;">Expected End Date:</label>
+                                    <div class="col-md-4">
+                                        <label for="endDate" class="form-label" style="text-align: left;">Expected End
+                                            Date:</label>
                                         <input type="date" name="endDate" id="date" placeholder="..." required>
                                     </div>
-                                    <div class="col-md-4" >
-                                        <label for="probAward" class="form-label" >Probability of Award: <output id="value"></output>%</label>
-                                        <input type="range" name="probAward" id="probAward" min="0" max ="100" step="5" value="50" required>
+                                    <div class="col-md-4">
+                                        <label for="probAward" class="form-label">Probability of Award: <output
+                                                id="value"></output>%</label>
+                                        <input type="range" name="probAward" id="probAward" min="0" max="100" step="5"
+                                            value="50" required>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="container" style="padding-top: 10px;">
                                 <div class="row mb-3" style="text-align: left; display: flex; align-items: center;">
-                                    <div class="col-md-8" >
+                                    <div class="col-md-8">
                                         <div id="gif-text"></div>
                                     </div>
-                                    <div class="col-md-4" >
+                                    <div class="col-md-4">
                                         <div id="gif-container"></div>
                                     </div>
                                 </div>
                             </div>
-                    
+
                             <div class="container" id="btnContainer" style="margin-top: 40px;">
                                 <div>
-                                    <button class="btn" id="btnHzd1Back" name="btnBack" value="backPg1" type="submit">Previous</button>
+                                    <button class="btn" id="btnHzd1Back" name="btnBack" value="backPg1"
+                                        type="submit">Previous</button>
                                 </div>
                                 <div>
-                                    <button class="btn" id="btnHzd1" name="reviewingOppData" type="submit">value</button>
+                                    <button class="btn" id="btnHzd1" name="reviewingOppData"
+                                        type="submit">value</button>
                                 </div>
-                                
+
                             </div>
-                            
+
                         </form>
                         <hr>
                         <div id="cardContainer">
                             <div class="card">
-                              <div class="card-header">
-                                Hazard Assessment Screening Form
-                              </div>
-                              <div class="card-body">
-                                <p class="card-text">Last Updated: January 2024</p>
-                                <a href="{% url 'formHazard:main' %}" id="launch" class="btn">Launch</a>
-                              </div>
+                                <div class="card-header">
+                                    Hazard Assessment Screening Form
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Last Updated: January 2024</p>
+                                    <a href="{% url 'formHazard:main' %}" id="launch" class="btn">Launch</a>
+                                </div>
                             </div>
                             <div class="card">
-                              <div class="card-header">
-                                New Opportunity
-                              </div>
-                              <div class="card-body">
-                                <p class="card-text">Last Updated: August 2024</p>
-                                <a href="{% url 'formNewProject:newOpp' %}" id="launch" class="btn">Launch</a>
-                              </div>
+                                <div class="card-header">
+                                    New Opportunity
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Last Updated: August 2024</p>
+                                    <a href="{% url 'formNewProject:newOpp' %}" id="launch" class="btn">Launch</a>
+                                </div>
                             </div>
                             <div class="card">
-                              <div class="card-header">
-                                New Proposal
-                              </div>
-                              <div class="card-body">
-                                <p class="card-text">Last Updated: August 2024</p>
-                                <a href="{% url 'formNewProject:newProposal' %}" id="launch" class="btn">Launch</a>
-                              </div>
+                                <div class="card-header">
+                                    New Proposal
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Last Updated: August 2024</p>
+                                    <a href="{% url 'formNewProject:newProposal' %}" id="launch" class="btn">Launch</a>
+                                </div>
                             </div>
                         </div>
                         <footer class="container footer dashboard">
@@ -245,7 +236,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>
