@@ -67,38 +67,44 @@ input[type="email"] {
   font-size: 16px;
 }
 
-#btnHzd1 {
-    background-color: #212529;
-    color: #fffed6;
-    border: 1px solid #212529;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 150px;
-    bottom: 10px; 
+#newContact {
+  background-color: #49a942;
+  color: #ffffff;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+  bottom: 10px; 
 }
 
-#test {
-    background-color: blue;
-    color: #fffed6;
+#newContact:hover {
+  background-color: #bcf0b9;
+  color: #212529;
+  border-color: #212529;
+}
+
+#btnHzd1 {
+    background-color: #49a942;
+    color: #ffffff;
     border: 1px solid #212529;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     width: 150px;
-    bottom: 10px; 
+    bottom: 10px;
 }
 
 #btnHzd1:hover {
-    background-color: #fffed6; /* New background color on hover */
+    background-color: #bcf0b9; /* New background color on hover */
     color: #212529;
     border-color: #212529;
 }
 
 
 #printButton {
-  background-color: #212529;
-  color: #fffed6;
+  background-color: #49a942;
+  color: #ffffff;
   border: 1px solid #212529;
   border-radius: 5px;
   cursor: pointer;
@@ -108,14 +114,14 @@ input[type="email"] {
 }
 
 #printButton:hover {
-  background-color: #fffed6; /* New background color on hover */
+  background-color: #bcf0b9; /* New background color on hover */
   color: #212529;
   border-color: #212529;
 }
 
 #btnHzd1Back {
-    background-color: #212529;
-    color: #fffed6;
+    background-color: #49a942;
+    color: #ffffff;
     border: 1px solid #212529;
     border-radius: 5px;
     cursor: pointer;
@@ -125,7 +131,7 @@ input[type="email"] {
 }
 
 #btnHzd1Back:hover {
-    background-color: #fffed6; /* New background color on hover */
+    background-color: #bcf0b9; /* New background color on hover */
     color: #212529;
     border-color: #212529;
 }
@@ -142,6 +148,24 @@ input[type="email"] {
 #aTagEdit:hover {
   background-color: #fffed6; /* New background color on hover */
   color: #212529 !important;
+}
+
+#launch {
+  background-color: #49a942;
+  color: #ffffff;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+  bottom: 10px;
+}
+
+#launch:hover {
+  background-color: #bcf0b9;
+  /* New background color on hover */
+  color: #212529;
+  border-color: #212529;
 }
 
 .stepper-wrapper {

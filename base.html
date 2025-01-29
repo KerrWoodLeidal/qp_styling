@@ -20,33 +20,7 @@
           padding: 20px;
           margin: 10px;
         } */
-      .card {
-        flex: 1 1 500px; /* Adjust the basis and grow/shrink ratio */
-        max-width: 500px; /* Maximum width of each card */
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      
-        /* .card-header {
-          color: #e0cb07 !important;
-        } */
-      
-      .card-header {
-        color: #e0cb07 !important;
-        padding: 10px;
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-      
-        input[type="text"] {
-          width: 98%;
-          padding: 10px;
-          margin: 10px;
-          border: 1px solid #ccc;
-          border-radius: 10px;
-          font-size: 16px;
-        }
+
       
         /* #cardContainer {
           display: grid;
@@ -69,27 +43,11 @@
         margin: 0;
       } */
       
-        #launch {
-          background-color: #212529;
-          color: #fffed6;
-          border: 1px solid #212529;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          width: 100px;
-          bottom: 10px;
-        }
-      
-        #launch:hover {
-          background-color: #fffed6;
-          /* New background color on hover */
-          color: #212529;
-          border-color: #212529;
-        }
+
       </style>
     <nav class="navbar navbar-expand-lg navbar-light border-bottom border-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">qp</a>
+            <a class="navbar-brand" href="/"><img src = "KWL_Square_Logo.JPG"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -111,15 +69,15 @@
         <div class="col-12 justify-content-center">
             <div class="container-fluid">
                 <div class="row">
-                    <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+                    <nav class="col-md-2 d-none d-md-block sidebar">
                         <div class="sidebar-sticky">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                 </li>
                                 <li class="nav-item">
-                                    <a style="color:#e0cb07">
+                                    <a style="color:#49a942">
                                         <span data-feather="header"></span>
-                                        Currently Available Apps
+                                        <b>Currently Available Apps</b>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -153,7 +111,7 @@
                                         </select>
                                         <div id="btnContainer" style="margin-top: 10px;">
                                             <!-- <button class="btn" id="btnHzd1" name="addClient" onclick="showAddClientModal(event)" style="display: block; background-color: #e0cb07; color: black;">New Contact</button> -->
-                                            <button class="btn" id="test" name="addClient" onclick="showAddClientModal(event)" style="display: block; color: white;">New Contact</button>
+                                            <button class="btn" id="newContact" name="addClient" onclick="showAddClientModal(event)" style="display: block;">New Contact</button>
                                         </div>		
                                 
                                 <label for="prjName" class="form-label" style="text-align: left; padding-top: 10px;">Name of Project:</label>

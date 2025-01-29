@@ -4,7 +4,7 @@ h1 {
 
 .navbar-light .navbar-toggler {
 	color: #fffed6;
-	background-color: #e0cb07;
+	background-color: #49a942;
 }
 
 h2 {
@@ -29,17 +29,46 @@ body {
     overflow-y: auto; /* Allows scrolling if the content exceeds the height */
 }
 .sidebar-sticky a{
-	color:#fffed6;
+	color:#ffffff;
 	height: 100%;
 	/*font-weight: bold;*/
 
 }
 
-/* .col-md-2{
-	background-color:black;
-} */
+.col-md-2{
+	background-color: #365f76;
+}
+
+.card {
+	flex: 1 1 500px; /* Adjust the basis and grow/shrink ratio */
+	max-width: 500px; /* Maximum width of each card */
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+	/* .card-header {
+	  color: #e0cb07 !important;
+	} */
+  
+  .card-header {
+	color: #FFFFFF!important;
+	padding: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+  }
+  
+	input[type="text"] {
+	  width: 98%;
+	  padding: 10px;
+	  margin: 10px;
+	  border: 1px solid #ccc;
+	  border-radius: 10px;
+	  font-size: 16px;
+	}
+
 .navbar-light .navbar-nav .nav-link{
-	color: #fffed6;
+	color: #ffffff;
 	font-size: 1.4em;
 
 }
@@ -56,15 +85,20 @@ body {
 }
 
 .navbar-light{
-	background-color: #212529;
+	background-color: #365f76;
 }
 
 /*https://colorpalettes.net/color-palette-4198/*/
 
-.navbar-light .navbar-brand {
+/* .navbar-light .navbar-brand {
     color:#e0cb07;
     font-size: 2.5em;
     padding-bottom: 0.5em;
+}*/
+
+img {
+	width: 77px;
+	height: 63px;
 }
 
 .bg-light {
@@ -203,7 +237,7 @@ a{
 	padding-top: 800px;
 }
 
-.logout .{
+.logout {
 	color: black
 }
 
@@ -310,7 +344,7 @@ div.tooltip {
 
 .card-header {
 	/*background: #2a4158;*/
-	background: #212529;
+	background: #365f76;
 	/*color: white;*/
 	color:#fffed6;
 }
