@@ -15,7 +15,6 @@ h3 {
 }
 body {
 	background-color: #ffffff;
-	/*background-color: #effced;*/
 }
 
 
@@ -31,8 +30,6 @@ body {
 .sidebar-sticky a{
 	color:#ffffff;
 	height: 100%;
-	/*font-weight: bold;*/
-
 }
 
 .col-md-2{
@@ -46,10 +43,7 @@ body {
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
-	/* .card-header {
-	  color: #e0cb07 !important;
-	} */
+
   
   .card-header {
 	color: #FFFFFF!important;
@@ -90,11 +84,6 @@ body {
 
 /*https://colorpalettes.net/color-palette-4198/*/
 
-/* .navbar-light .navbar-brand {
-    color:#e0cb07;
-    font-size: 2.5em;
-    padding-bottom: 0.5em;
-}*/
 
 img {
 	width: 77px;
@@ -161,11 +150,6 @@ img {
 	border-color: #212529;
 
 }
-/*.main-bot{
-	background-color: #958a56;
-	padding-top: 500px;
-
-}*/
 
 .jumbotron {
 	/*background-image: url(../img/home3.jpg);*/
@@ -219,11 +203,6 @@ a{
 	padding-top: 25px;
 	padding-bottom: 25px;
 	margin-left: 0;
-	/*bottom: 0;*/
-/*	padding: 10px;
-	height: 50px;*/
-	/*position: absolute;*/
-	/*bottom: 0;*/
 	
 }
 
@@ -343,37 +322,13 @@ div.tooltip {
 
 
 .card-header {
-	/*background: #2a4158;*/
 	background: #365f76;
-	/*color: white;*/
-	color:#fffed6;
+	color:#ffffff;
 }
 
 .card-img-top{
 	border-radius: 20%;
 }
-
- /* Style the buttons */
-/*.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}*/
-
-
-/*.active, .btn:hover {
-  background-color: #666;
-  color: white;
-} */
-
-/*.btn-primary.active {
-  color: white;
-  background-color: red;
-  border-color: #5cb85c;
-  outline: none;
-}*/
 
 .page-link{
 	color: #fffed6;
@@ -386,9 +341,6 @@ div.tooltip {
 	border-color: #fffed6;
 }
 
-/*.page-item:hover {
-	background-color: red;
-}*/
 
 .pagination > .page-item > a:hover
 {
@@ -400,9 +352,5 @@ div.tooltip {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     
     background-color: red;
-    border-color: red; /*set the color you want here*/
+    border-color: red;
 }
-
-/* .form-check-label {
-	text-align: left;
-} */
