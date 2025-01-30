@@ -17,7 +17,6 @@ body {
 	background-color: #ffffff;
 }
 
-
 .row .main-top {
 	padding-bottom: 500px
 }
@@ -27,6 +26,12 @@ body {
     height: 100vh; /* Full height of the viewport */
     overflow-y: auto; /* Allows scrolling if the content exceeds the height */
 }
+
+.available-apps-header {
+	color:#49a942;
+	font-weight: bold;
+}
+
 .sidebar-sticky a{
 	color:#ffffff;
 	height: 100%;
@@ -44,8 +49,7 @@ body {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  
-  .card-header {
+.card-header {
 	color: #FFFFFF!important;
 	padding: 10px;
 	font-size: 1.2em;
@@ -90,51 +94,6 @@ img {
 	height: 63px;
 }
 
-.bg-light {
-	background-color: black;
-}
-
-.bg-light .sidebar {
-	background-color: black;
-}
-
-.main-page {
-    width: 175px;
-}
-
-.main-med2 {
-	color: white;
-}
-
-.main-h1{
-	font-size: 3em;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color:black;
-	padding-left: 100px;
-
-}
-
-.top-top{
-	padding-top: 50px;
-	/*background-color: #2a4158;*/
-}
-
-/*.col-md-4{
-    background-color: #176caf;
-}*/
-
-.main-col2{
-    background-color: white;
-}
-
-
-.main-h2{
-    font-size: 1.5em;
-	padding-top: 150px;
-	padding-bottom: 10px;
-	
-}
 
 .btn-primary{
 	background-color: #212529;
@@ -149,42 +108,6 @@ img {
 	color:#fffed6;
 	border-color: #212529;
 
-}
-
-.jumbotron {
-	/*background-image: url(../img/home3.jpg);*/
-	background-size: cover;
-	background-position: center;
-	background-color: white;
-
-}
-
-.jumbotron .display-4{
-	color: #212529;
-	font-size: 2.5em;
-}
-
-.jumbotron .display-2{
-	color: white;
-	font-size: 1.5em;
-}
-.jumbotron .lead{
-	color: #212529;
-}
-
-.jumbotron .lead2{
-	color: white;
-}
-
-.rowAcross{
-	background-color: #e0cb07;
-	color: white;
-}
-
-
-.jumbotron .col-md-12{
-	padding-left: 650px;
-	padding-top: 80px;
 }
 
 .list-unstyled{
@@ -238,24 +161,6 @@ a{
     object-fit: cover;
 }
 
-.top{
-	padding-top: 50px;
-	color: red;
-}
-
-div.tooltip {	
-    position: absolute;			
-    text-align: center;			
-    width: 90px;					
-    height: 35px;					
-    padding: 2px;				
-    font: 12px sans-serif;	
-    color: white;	
-    background: #636363;	
-    border: 0px;		
-    border-radius: 8px;			
-    pointer-events: none;			
-}
 
 .overflow-auto {
 	height:800px;
@@ -266,54 +171,12 @@ div.tooltip {
 
 }
 
-.row .dash{
-	background-color:#f8f9fa;
-	padding-top: 10px;
-}
-
-.row .info{
-	background-color:red;
-	padding-top: 10px;
-}
-
-.row .main-med {
-	background-color:green;
-	padding-top: 10px;
-
-}
-
 .main-med{
 	background-color: #212529;
 	padding-top: 10px;
 	padding-bottom: 300px;
 }
 
-.main-med a{
-	color: #fffed6;
-	font-size: 1.5em;
-}
-
-.vl {
-  border-left: 4px solid #e0cb07;
-  height: 50px;
-}
-.nav-tabs {
-	border-bottom: 1px solid #e0cb07;
-}
-.nav-tabs .nav-link.active {
-	background-color: white;
-}
-
-.row .dash-small{
-	background-color:#f8f9fa;
-	padding-top: 10px;
-}
-
-.card .h-md-100{
-	background-color: red;
-	border: 0 solid #edf2f9;
-	border-radius: .375rem;
-}
 
 .overflow-auto-table {
 	height:480px;
@@ -349,8 +212,3 @@ div.tooltip {
     color:  #212529;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    
-    background-color: red;
-    border-color: red;
-}
