@@ -39,6 +39,8 @@ body {
 	height: 100%;
 }
 
+
+
 .col-md-2{
 	background-color: #365f76;
 }
@@ -73,11 +75,11 @@ body {
 
 }
 .nav > li > a:hover{
-    background-color:#686868;
+    background-color:#36aec3
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	color: white;
+	color: #000;
 }
 
 .navbar-light .navbar-brand:hover {
