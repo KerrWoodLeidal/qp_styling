@@ -68,7 +68,7 @@ body {
 	}
 
 .navbar-light .navbar-nav .nav-link{
-	color: #fff;
+	color: #000;
 	font-size: 1.4em;
 
 }
@@ -85,10 +85,9 @@ body {
 }
 
 .navbar-light{
-	background-color: #365f76;
-	box-shadow: 5px 5px 5px #365f76;
+	background-color: #fff;
+	box-shadow: 5px 5px 5px #aaa;
 	height: 75px;
-	padding: 10px;
 }
 
 /*https://colorpalettes.net/color-palette-4198/*/
