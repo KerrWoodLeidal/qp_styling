@@ -3,8 +3,10 @@ h1 {
 }
 
 .navbar-light .navbar-toggler {
-	color: #fffed6;
+	color: #fff;
 	background-color: #49a942;
+	
+	
 }
 
 h2 {
@@ -84,6 +86,9 @@ body {
 
 .navbar-light{
 	background-color: #365f76;
+	box-shadow: 5px 5px 5px #365f76;
+	height: 75px;
+	padding: 10px;
 }
 
 /*https://colorpalettes.net/color-palette-4198/*/

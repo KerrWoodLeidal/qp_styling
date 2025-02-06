@@ -70,70 +70,78 @@ input[type="email"] {
 #newContact {
   background-color: #49a942;
   color: #ffffff;
-  border: 1px solid #212529;
+  border: 2px solid #212529;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   width: 150px;
-  bottom: 10px; 
+  bottom: 10px;
+  font-weight: bold;
 }
 
 #newContact:hover {
   background-color: #bcf0b9;
   color: #212529;
   border-color: #212529;
+  font-weight: bold;
 }
 
 #btnHzd1 {
     background-color: #49a942;
     color: #ffffff;
-    border: 1px solid #212529;
+    border: 2px solid #212529;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     width: 150px;
     bottom: 10px;
+    font-weight: bold;
 }
 
 #btnHzd1:hover {
     background-color: #bcf0b9; /* New background color on hover */
     color: #212529;
     border-color: #212529;
+    font-weight: bold;
 }
 
 
 #printButton {
   background-color: #49a942;
   color: #ffffff;
-  border: 1px solid #212529;
+  border: 2px solid #212529;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   width: 150px;
-  bottom: 10px; 
+  bottom: 10px;
+  font-weight: bold;
 }
 
 #printButton:hover {
   background-color: #bcf0b9; /* New background color on hover */
   color: #212529;
   border-color: #212529;
+  font-weight: bold;
 }
 
 #btnHzd1Back {
     background-color: #49a942;
     color: #ffffff;
-    border: 1px solid #212529;
+    border: 2px solid #212529;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     width: 150px;
-    bottom: 10px; 
+    bottom: 10px;
+    font-weight: bold;
 }
 
 #btnHzd1Back:hover {
     background-color: #bcf0b9; /* New background color on hover */
     color: #212529;
     border-color: #212529;
+    font-weight: bold;
 }
 
 #aTagEdit {
@@ -153,12 +161,13 @@ input[type="email"] {
 #launch {
   background-color: #49a942;
   color: #ffffff;
-  border: 1px solid #212529;
+  border: 2px solid #212529;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   width: 100px;
   bottom: 10px;
+  font-weight: bold;
 }
 
 #launch:hover {
@@ -166,6 +175,7 @@ input[type="email"] {
   /* New background color on hover */
   color: #212529;
   border-color: #212529;
+  font-weight: bold;
 }
 
 #porList li {
